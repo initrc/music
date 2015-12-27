@@ -1,12 +1,26 @@
-html {
-  height: 100%;
-}
-
-body {
-  height: 100%;
+.center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.center-vertical {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
 }
 
 .title {
