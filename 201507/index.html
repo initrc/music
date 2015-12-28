@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
     <link rel="stylesheet" type="text/css" href="../css/main.css">
     <title>红颜旧</title>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
     <script>
-      var dataForWeixin = {
+      var wechatData = {
         img: "../cover2015.jpg",
         title: "红颜旧"
       };
+      wx.onMenuShareAppMessage({
+        title: "红颜旧",
+        imgUrl: "../cover2015.jpg",
+      });
     </script>
   </head>
   <body class="center vertical">
