@@ -39,33 +39,23 @@ html, body {
   margin-right: 10px;
 }
 
-.title {
+.text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 60vw; /* fallback */
+  max-width: calc(90vw - 58px); /* minus cover width and margin */
+}
+
+#title {
   font-size: 18px;
   margin-bottom: 4px;
 }
 
-.subtitle {
+#subtitle {
   font-size: 10px;
 }
 
-.mb {
+#info {
   margin-bottom: 30px;
 }
-
-.marque {
-  width: 60vw;
-  white-space: nowrap;
-  overflow: hidden;
-  overflow-x:-webkit-marquee;
-  -webkit-marquee-direction: forwards;
-  -webkit-marquee-style: scroll;
-  -webkit-marquee-speed: normal;
-  -webkit-marquee-increment: small;
-  -webkit-marquee-repetition: 5;
-  overflow-x: marquee-line;
-  marquee-direction: forward;
-  marquee-style: scroll;
-  marquee-speed: normal;
-  marquee-play-count: 5;
-}
-
