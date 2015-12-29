@@ -18,17 +18,31 @@ html, body {
   align-items: center;
 }
 
+.horizontal {
+  flex-direction: row;
+}
+
 .vertical {
   flex-direction: column;
 }
 
 .cover {
-  width: 150px;
-  height: 150px;
-  margin-bottom: 20px;
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  margin-right: 10px;
 }
 
 .title {
-  font-size: 20px;
-  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  font-size: 12px;
+}
+
+.mb {
+  margin-bottom: 30px;
 }
