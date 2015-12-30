@@ -1,9 +1,5 @@
 var app = angular.module('musicApp', []);
 
-app.config(function($sceDelegateProvider) {
-  $sceDelegateProvider.resourceUrlWhitelist(['self'])
-});
-
 app.controller('PlaylistController', function($scope) {
   $scope.songs = [
     {name: '红颜旧', artist: 'David Shi', album: 'Piano Covers \'15', track: '07'},
