@@ -2,6 +2,7 @@ html, body {
   width: 100vw;
   margin: 0;
   padding: 0;
+  font-family: "Times New Roman", Times;
 }
 ul {
   margin: 20px 0 20px 0;
