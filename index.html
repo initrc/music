@@ -18,7 +18,7 @@
           <div class="text" id="subtitle">{{song.artist}} - {{song.album}}</div>
         </div>
       </div>
-      <div><audio ng-src="{{getSongUrl(song)}}" preload="auto" controls/></div>
+      <div><audio ng-src="{{getSongUrl(song)}}" preload="metadata" controls/></div>
       <hr ng-hide="$last">
     </li>
     </ul>
