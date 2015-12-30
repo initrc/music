@@ -60,7 +60,7 @@ hr {
   margin: 40px;
   border: 0;
   height: 1px;
-  background-image: linear-gradient(to right, rgba(80, 80, 80, 0), rgba(80, 80, 80, 0.75), rgba(80, 80, 80, 0));
+  background-image: linear-gradient(to right, rgba(200, 200, 200, 0), rgba(200, 200, 200, 0.75), rgba(200, 200, 200, 0));
   text-align: center;
 }
 hr:after {
@@ -70,6 +70,6 @@ hr:after {
   font-size: 12px;
   top: -12px;
   padding: 0 4px;
-  color: #777;
+  color: #bbb;
   background: white;
 }
