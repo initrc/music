@@ -1,8 +1,14 @@
 html, body {
   width: 100vw;
-  height: 100vh;
   margin: 0;
   padding: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  margin: 20px 0 40px 0;
 }
 
 .flex {
@@ -10,7 +16,6 @@ html, body {
   display: -webkit-flex;
   display: flex;
 }
-
 .center {
   -ms-flex-align: center;
   -webkit-align-items: center;
@@ -19,15 +24,12 @@ html, body {
   justify-content: center;
   align-items: center;
 }
-
 .start {
   justify-content: start;
 }
-
 .horizontal {
   flex-direction: row;
 }
-
 .vertical {
   flex-direction: column;
 }
@@ -38,7 +40,6 @@ html, body {
   border-radius: 4px;
   margin-right: 10px;
 }
-
 .text {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -46,16 +47,14 @@ html, body {
   max-width: 60vw; /* fallback */
   max-width: calc(95vw - 58px); /* minus cover width and margin */
 }
-
 #title {
   font-size: 15px;
   margin-bottom: 4px;
 }
-
 #subtitle {
   font-size: 10px;
 }
-
 #info {
-  margin: 50px 0 20px 0;
+  margin-bottom: 20px;
 }
+

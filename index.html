@@ -8,7 +8,8 @@
     <script src="js/music.js"></script>
   </head>
   <body ng-controller="PlaylistController" class="flex center vertical">
-    <div ng-repeat="song in songs" class="flex start vertical">
+    <ul>
+    <li ng-repeat="song in songs" class="flex start vertical">
 
       <div class="flex start horizontal" id="info">
         <img class="cover" ng-src="{{getAlbumUrl(song)}}"/>
@@ -18,5 +19,7 @@
         </div>
       </div>
       <audio ng-src="{{getSongUrl(song)}}" preload="auto" controls/>
+    </li>
+    </ul>
   </body>
 </html>
