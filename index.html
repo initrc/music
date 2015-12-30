@@ -7,16 +7,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script src="js/music.js"></script>
   </head>
-  <body class="flex center vertical">
-    <div ng-controller="PlaylistController">
+  <body ng-controller="PlaylistController" class="flex center vertical">
+    <div ng-repeat="song in songs" class="flex center vertical">
 
-      <div class="flex center horizontal" id="info" ng-repeat="song in songs">
-        <img class="cover" ng-src="image/{{song.album}}.jpg"/>
+      <div class="flex center horizontal" id="info">
+        <img class="cover" ng-src="{{getAlbumUrl(song)}}"/>
         <div>
           <div class="text" id="title">{{song.name}}</div>
           <div class="text" id="subtitle">{{song.artist}} - {{song.album}}</div>
         </div>
       </div>
-
+      <audio ng-src="{{getSongUrl(song)}}" preload="auto" controls/>
   </body>
 </html>
