@@ -20,10 +20,12 @@ ul {
   -webkit-box-align: center;
 
   justify-content: center;
+  -webkit-justify-content: center;
   align-items: center;
 }
 .start {
   justify-content: start;
+  -webkit-justify-content: start;
 }
 .horizontal {
   flex-direction: row;
