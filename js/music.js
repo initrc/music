@@ -14,10 +14,9 @@ app.controller('PlaylistController', function($scope) {
     {name: 'Secret Base', artist: 'David Shi', album: 'Piano Covers \'15', track: '02'},
     {name: 'Sadness and Sorrow', artist: 'David Shi', album: 'Piano Covers \'15', track: '01'},
   ];
-  $scope.getSongUrl = function(song) {
-    return song.album + '/' + song.track + ' ' + song.name + '.mp3';
-  };
-  $scope.getAlbumUrl = function(song) {
-    return song.album + '/cover.jpg';
-  };
+  for (var i = 0; i < $scope.songs.length; i++) {
+    var song = $scope.songs[i];
+    $scope.songs[i].url = song.album + '/' + song.track + ' ' + song.name + '.mp3';
+    $scope.songs[i].cover = song.album + '/cover.jpg';
+  }
 });
