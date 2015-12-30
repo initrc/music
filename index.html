@@ -10,8 +10,11 @@
     <script src="js/music.js"></script>
   </head>
   <body ng-controller="PlaylistController" class="flex center vertical">
+    <!-- wechat share icon -->
+    <div style="display:none"><img src="Piano Covers '15/cover.jpg"/></div>
     <ul>
     <li ng-repeat="song in songs" class="flex start vertical">
+      <!-- song info -->
       <div class="flex start horizontal" id="info">
         <img class="cover" ng-src="{{song.cover}}"/>
         <div>
@@ -19,6 +22,7 @@
           <div class="text" id="subtitle">{{song.desc}} / {{song.artist}} - {{song.album}}</div>
         </div>
       </div>
+      <!-- audio player -->
       <div><audio ng-src="{{song.url}}" preload="metadata" controls/></div>
       <hr ng-hide="$last">
     </li>
