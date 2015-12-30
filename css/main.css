@@ -41,12 +41,11 @@ ul {
 .text {
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
   max-width: 60vw; /* fallback */
-  max-width: calc(95vw - 58px); /* minus cover width and margin */
+  max-width: calc(90vw - 58px); /* minus cover width and margin */
 }
 #title {
-  font-size: 14px;
+  font-size: 15px;
   margin-bottom: 4px;
 }
 #subtitle {
