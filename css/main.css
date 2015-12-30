@@ -46,7 +46,7 @@ ul {
   max-width: calc(95vw - 58px); /* minus cover width and margin */
 }
 #title {
-  font-size: 15px;
+  font-size: 14px;
   margin-bottom: 4px;
 }
 #subtitle {
