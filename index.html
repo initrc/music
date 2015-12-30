@@ -8,9 +8,9 @@
     <script src="js/music.js"></script>
   </head>
   <body ng-controller="PlaylistController" class="flex center vertical">
-    <div ng-repeat="song in songs" class="flex center vertical">
+    <div ng-repeat="song in songs" class="flex start vertical">
 
-      <div class="flex center horizontal" id="info">
+      <div class="flex start horizontal" id="info">
         <img class="cover" ng-src="{{getAlbumUrl(song)}}"/>
         <div>
           <div class="text" id="title">{{song.name}}</div>
