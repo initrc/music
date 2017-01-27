@@ -1,8 +1,9 @@
 var app = angular.module('musicApp', []);
 
 app.controller('PlaylistController', function($scope) {
-  var albums = ['Piano Covers \'15', 'Piano Covers \'16'];
+  var albums = ['Piano Covers \'15', 'Piano Covers \'16', 'Piano Covers \'17'];
   var songs = [
+    {name: '小幸运', desc: '田馥甄', album: albums[2], track: '01'},
     {name: 'Brave Song', desc: 'Angel Beats!', album: albums[1], track: '02'},
     {name: '一番の宝物', desc: 'Angel Beats!', album: albums[1], track: '01'},
     {name: '红颜旧', desc: '琅琊榜', album: albums[0], track: '07'},
